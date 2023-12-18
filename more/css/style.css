@@ -1,0 +1,153 @@
+@font-face{
+	font-family: 'goodfont';
+	src:url('../../more/font/Kinan.ttf');
+}
+::-webkit-scrollbar {
+	width: 0;
+}
+body{
+	padding:0;
+	margin:0;
+	font-family: goodfont;
+	background: #89CFF0;
+}
+.backgroundparent{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+.content{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+.backgroundparent div{
+	width:100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.backgroundparent div img{
+	width: 70%;
+	height: 100%;
+	object-fit: cover;
+	border:3px dotted white;
+	opacity: .7;
+}
+.container{
+	width:100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	overflow-x:hidden;
+}
+#top{
+	height:64px;
+	width: 100%;
+	border:3px dotted #89CFF0;
+/*	background:#89CFF0;*/
+	background:white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size:32px;
+	font-weight: bold;
+/*	color: #89CFF0;*/
+	padding:20px 0;
+/*	position:sticky;
+	top:0;*/
+	border-top: 0;
+}
+.photoprofile{
+	width:256px;
+	height: 256px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px dotted #89CFF0;
+	background: white;
+}
+#middle{
+	width:70%;
+	padding:40px 0;
+	display: flex;
+	justify-content: center;
+}
+#photo{
+	width:40%;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	padding:20px;
+}
+#slogan{
+	width:60%;
+	display: flex;
+	justify-content: center;
+	align-items:flex-start;
+	flex-direction: column;
+	padding:20px;
+}
+#bottom{
+	width:70%;
+	padding:40px 0;
+	display: flex;
+	justify-content: center;
+	padding-top: 0;	
+}
+.boxwhite{
+	width: 100%;
+	padding:20px 0;
+	/*border-radius: 0 20px 0 20px;
+	border:3px dotted white;*/
+}
+.bioitem{
+	display: flex;
+	border-bottom: 5px dotted white;
+	padding:10px 0;
+}
+.bioitem div{
+	width: 50%;
+/*	text-align: center;*/
+}
+.footer{
+	font-family: calibri;
+	height:64px;
+	padding:30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@media screen and (max-width:700px){
+	.smartWidth{
+		width: 80%;
+	}
+	.parent{
+		margin-top:40px;
+	}
+	.backgroundparent div img{
+		width: 100%;
+		height: 100%;
+	}
+	#bottom{
+		width: 100%;
+	}
+	#middle{
+		width: 100%;
+		flex-direction: column;
+	}
+	#photo{
+		width: 100%;
+		padding:0;
+	}
+	#slogan{
+		width: 100%;
+		align-items: center;
+		padding:20px 0;
+		text-align: center;
+	}
+}
